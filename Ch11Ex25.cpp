@@ -13,7 +13,7 @@ void dispMonthDay(int, int[]);
 
 int main() {
 	int month = 0;
-	int arrayMonths[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	int days[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 	char continueFlag = ' ';
 
 	cout << "Enter in an integer (1-12) representing a month and the" << endl;
@@ -25,7 +25,7 @@ int main() {
 		// error handling to make sure input is an integer
 		cin >> month;
 		month = monthErr(month);
-		dispMonthDay(month, arrayMonths);
+		dispMonthDay(month, days);
 
 		cout << "Enter another month? (y/n): ";
 		cin >> continueFlag;
@@ -59,7 +59,7 @@ char contFlagErr(char continueFlag)
 	return continueFlag;
 }
 
-void dispMonthDay(int month, int arrayMonths[])
+void dispMonthDay(int month, int days[])
 {
 	string strMonth = " ";
 
@@ -104,7 +104,7 @@ void dispMonthDay(int month, int arrayMonths[])
 		break;
 	}
 
-	cout << "There are " << arrayMonths[month - 1] << " days in " << strMonth << "." << endl;
+	cout << "There are " << days[month - 1] << " days in " << strMonth << "." << endl;
 	cout << "-----------------------------" << endl << endl;
 
 }

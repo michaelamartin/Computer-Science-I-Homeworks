@@ -32,3 +32,7 @@ Create a program that calculates the average of three test scores. The program s
 ## Chapter 10 - Exercise 15
 
 Create a program that displays a multiplication of a given multiplicand. The program should use a void function to display the multiplication table.
+
+## Chapter 11 - Exercise 25
+
+Create a porgram that assigns the number of days in each month to an array.  Code the program so that it displays the number of days corresponding to the month number entered by the user. For example, when the user enters 7, the program should display the number 31.  The program also should display an appropriate message when the user enters an invalid month number.
